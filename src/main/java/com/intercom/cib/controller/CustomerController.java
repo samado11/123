@@ -5,13 +5,13 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-<<<<<<< HEAD
+
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
-=======
+
 import org.springframework.web.bind.annotation.GetMapping;
->>>>>>> 28f7d516b253c2ab3b356b9b7aa65f38eed3263d
+
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,25 +29,17 @@ import lombok.extern.log4j.Log4j;
 
 @RestController
 @RequestMapping("/customers")
-<<<<<<< HEAD
+
 
 public class CustomerController {
-	 
-//	@Autowired
- private CustomerService CS;
-	
-	public CustomerController(CustomerService CS){
-		this.CS=CS;
-	}
 	  
-=======
-@Log4j
-public class CustomerController {
+
+
 	 
 	@Autowired
 	 private CustomerService CS;
 	
->>>>>>> 28f7d516b253c2ab3b356b9b7aa65f38eed3263d
+
 	@GetMapping("/get")
 	public List<Customer> getAllCustomers(){
 		System.out.println("test request");
